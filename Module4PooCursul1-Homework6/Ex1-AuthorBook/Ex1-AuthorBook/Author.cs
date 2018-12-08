@@ -8,7 +8,7 @@ namespace Ex1_AuthorBook
 {
     public class Author
     {
-        public Author(string name,string email, string country)
+        public Author(string name, string email, string country)
         {
             Name = name;
             Email = email;
@@ -20,5 +20,10 @@ namespace Ex1_AuthorBook
 
         public string Country { get; set; }
 
+
+        public string Print()
+        {
+            return $"The name of the author is {Name}, the email is: {Email} and the coutry is: {Country}";
+        }
     }
 }

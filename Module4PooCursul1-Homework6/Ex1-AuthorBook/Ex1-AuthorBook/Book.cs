@@ -22,5 +22,12 @@ namespace Ex1_AuthorBook
         public int Year { get; set; }
 
         public double Price { get; set; }
+
+        public string Print()
+        {
+            return $"The name of the book is {Name}, the author of the book is: {AuthorOfBook.Name}, her email is {AuthorOfBook.Email} " +
+                $"and the country of the author is: {AuthorOfBook.Country}. The year of the book is {Year} and the price is {Price}.";
+        }
     }
 }
+
